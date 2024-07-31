@@ -1,0 +1,9 @@
+img.champsnumero{
+    width: 15px;
+    height: 20px;
+}
+.champsnumero{
+    display: flex;
+    width: 15px;
+    height: 20px;
+}

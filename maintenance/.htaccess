@@ -1,0 +1,3 @@
+DirectoryIndex maintenance.php
+# Empêcher l'accès direct au répertoire Creation
+# Options -Indexes

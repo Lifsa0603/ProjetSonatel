@@ -1,0 +1,96 @@
+#envoyer.form-control{
+    background-color: rgb(228, 194, 182);
+    border-color: rgb(228, 197, 182) ;
+}
+#formulaire2{
+    background-attachment: fixed;
+    background-image: url(../img/Technicien.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position-x: right;
+}
+@media (max-width: 500px) {
+   
+    #formulaire2{
+        background-size: cover;
+        height: 90%;
+    }
+    #validation{
+        width: 400px;
+        padding: 0;
+        margin: 0;
+    }
+    #formulaire2 > span.d-block.text-white.w-100.px-5.py-5{
+        position: fixed;
+        padding: 0;
+        margin: 0;
+    }
+    #validation{
+       position: fixed;
+       display: block;
+       justify-items: center;
+    }
+    #my-row > div{
+        justify-content: center;
+    }
+
+}
+@media (max-width: 480px){
+    #formulaire2 > span.d-block.text-white.w-100.px-5.py-5{
+        height: 250px;
+    }
+}
+
+.form-control[type="password"] {
+    border: none;
+}
+.form-control {
+    height: 40px; /* Ajustez la hauteur selon vos besoins */
+}
+
+.hide {
+    display: none;
+  }
+  
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+@media (max-width: 991px){
+        #formulaire2 > span > div > span{
+        position: relative;
+        left: 29%;
+        
+    }
+    #formulaire2 > span > div > button{
+        position: absolute;
+        right: 25%;
+    }
+    body > footer > div > a:nth-child(1) > span{
+        font-size: 10px;
+    }
+    body > footer > div > a:nth-child(2) > span{
+        font-size: 10px;
+    }
+}
+@media (min-width: 992px){
+    #formulaire2 > span > div > span{
+        width: 50%;
+        height: 100%;
+        position: relative;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 35px;
+    }
+    #formulaire2 > span > div > button{
+        position: absolute;
+        right:28%;
+    }
+}
+.input-group {
+    width: 25%; /* Ajustez la largeur selon vos besoins */
+    margin: auto; /* Centrez horizontalement la zone de formulaire */
+}

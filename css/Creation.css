@@ -1,0 +1,59 @@
+body{
+    background-image: url(../img/formulaire_transfert_orange_money_original.png);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    justify-content: center;
+    background-attachment: scroll;
+    height: 100vh;
+}
+.container-fluid{
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+
+form input{
+    border: 0;
+    border-bottom: 1px solid ;
+    outline: none;
+    background-color:transparent;/**/
+    width: 265px;
+    right: 15px;
+    color: rgb(76, 17, 240);
+    
+}
+#FORM{
+    width: 100%;
+    border-top: solid 5px black;
+    height:min-content;
+}
+
+::placeholder{
+    color: rgb(76, 17, 240);
+}
+
+.pied {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+fieldset{
+    width: 400px;
+    height:auto;
+}
+#telephoneagent{
+    width: 150px;
+}
+.scrollable-div {
+    height: 100vh;
+    width: 400px;
+    overflow-y: auto; /* Activation du défilement */
+ }
+
+
+
+  

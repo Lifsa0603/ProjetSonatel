@@ -1,0 +1,141 @@
+.scrollable-div {
+   overflow: auto; /* Activation du défilement */
+}
+/* .containerr{
+   border: 2px solid black;
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+#graph-container-1{
+   width: 100%;
+   height: 100%;
+} */
+
+.containerr{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   overflow: auto;
+}
+.graph-container-1{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+#graph-container-1 > div > div{
+   width: 95%;
+   height: 100%;
+}
+body > div > div:nth-child(2) > div.col-10.row > div.col-lg-9.col-md-12.h-100.scrollable-div > div > div.col-lg-6.col-md-12.h-100.m-0.p-0.scrollable-div > div{
+   width: 99%;
+   height: 100%;
+}
+#graph-container-1 > div > div{
+   width: 99%;
+   height: 100%;
+}
+#graph-container-1 > div{
+   width: 99%;
+   height: 100%;
+   
+}
+
+@media only screen and (max-width:767px) {
+   #grapheticket{
+      width: 100%;
+   }
+}
+.kpi-card {
+   background-color: #ffffff;
+   /* padding: 20px;
+   margin-bottom: 20px; */
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-card h2 {
+   font-size: 18px;
+   margin-bottom: 10px;
+}
+@media screen and (max-width:767px) {
+  .Resolution{
+   height: min-content;
+  }
+  .Maintenance{
+   height: min-content;
+  }
+  #noteclient{
+   display: none;
+}
+#noteclient1{
+   display: none;
+}
+#noteclienttext{
+   display: none;
+}
+}
+
+@media only screen and (min-width:768px) {
+   .Resolution{
+    height: 50%;
+   }
+   .Maintenance{
+    height: 50%;
+   }
+   
+ }
+
+ .slice {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   clip: rect(0, 200px, 200px, 0); /* Ajustez la partie visible de l'arc */
+   transform-origin:  100% 50%;
+ }
+
+ .pie-chart {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: #f0f0f0;
+   overflow: hidden;
+ }
+
+ .center-text {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-weight: bold;
+ }
+
+
+
+ /*Client*/
+ .sliceclient {
+   position: absolute;
+   width: 50%;
+   height: 100%;
+   clip: rect(0, 200px, 200px, 0); /* Ajustez la partie visible de l'arc */
+   transform-origin:  100% 50%;
+ }
+
+ .pie-chartclient {
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   background-color: #f0f0f0;
+   overflow: hidden;
+ }
+
+ .center-textclient {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-weight: bold;
+ }

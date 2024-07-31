@@ -1,0 +1,200 @@
+*{
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navigation{
+    position: fixed;
+    /*top: 50px;
+    left: 20px;
+    bottom: 20px;*/
+    background: black;
+    /*Diminuer la largeur et cacher les débordement avec overflow-x*/
+    width: 60px;
+    border-radius: 10px;
+    /*border-left:5px solid black ;*/
+    transition: 1s;
+    justify-content: space-between;
+}
+.navigation.ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+    display: none;
+    margin: 0;
+    padding: 0 ;
+    list-style-type: none;
+}
+
+body > div > ul > li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    transition: 1s;
+
+}
+
+body div ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    text-decoration: none ;
+    color: antiquewhite; 
+}
+
+body div ul li a span.icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height:30px ;
+    text-align: center;
+    word-break: normal;
+}
+body div ul li a span.title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    transition: 1s;
+
+}
+body div ul li.list.active{
+    /* background-color: antiquewhite;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    transition: 1s;
+
+}
+
+.active{
+    background-color: antiquewhite;
+    color:black
+}
+body div ul li.list.active a{
+    color: black;
+    transition: 1s;
+}
+
+.divtoggle{
+    position: fixed;
+    top: 20px;
+    left: 280px;
+    height: 30px;
+    width: 30px;
+    background: rgb(242, 138, 10);
+    border-radius: 10px;
+    cursor: pointer;
+    /*Ces derniers paramètres permettent de mettre l'élément totalement dans la div */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divtoggle.active{
+    background: rgb(241, 140, 7);
+} 
+
+li a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+div.d-flex.flex-column.entete{
+    height: 10vh; /* Définir la hauteur à 10% de la hauteur de la fenêtre */
+    align-items: center; /* Centrer verticalement le contenu */
+}
+div.col-1.p-0.m-0.h-100 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Aligner l'icône en bas */
+}
+
+div.col-1.p-0.m-0.h-100 > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul{
+list-style: none;
+}
+#barrenav > ul{
+padding: 0;
+margin: 0;
+}
+#barrenav{
+    height:70%;
+    position: fixed;
+    top: 17%;
+    left:0;
+    padding: 0;
+    margin: 0;
+}
+
+/*.navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }*/
+  
+  /* .navigation li {
+    flex: 1;
+  } */
+li{
+    height: 100%;
+}
+body > footer > div{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+body > div > div:nth-child(1) > div.col-6.p-0.m-0.h-100 > div > p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+body.div.w-100.h-100{
+    justify-content: flex-start;
+    align-items: normal;
+}
+
+.fiche-maintenance-hide{
+    display: none;
+}
+.fiche-maintenance{
+    display: list-item;
+}
+.barrenavigation{
+    width: 60px;
+}
+/*
+   background-color: antiquewhite;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 1s;
+
+*/
+.scrollable-div {
+    overflow: auto; /* Activation du défilement */
+ }
+ .scrollable-divhauteur {
+    overflow-y: auto; /* Activation du défilement */
+ }
+/* Styles pour les écrans de taille supérieure ou égale à 577px */
+@media only screen and (max-width: 577px) {
+    .coltp-6 {width: 50%;}
+}
+.plot-container{
+    margin: 0;
+    padding: 0;
+}

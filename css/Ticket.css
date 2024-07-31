@@ -1,0 +1,29 @@
+.rond{
+    width:25px;
+    height: 20px;
+    border-radius: 50%;
+}
+.trait{
+    width:25px;
+    height: 15px;
+}
+.colonnecouleur{
+    height: min-content;
+    width: 25px;
+} 
+td{
+    height: min-content;
+    width:min-content;
+}
+.contenttable{
+    width: max-content;
+    border: 0;
+}
+.titletable{
+    width: max-content;
+    border: 0;
+}
+
+.scrollable-div {
+    overflow: auto; /* Activation du défilement */
+ }

@@ -1,0 +1,134 @@
+.scrollable-div {
+    overflow: auto; /* Activation du défilement */
+}
+
+@media only screen and (max-width: 478px) {
+    #search{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #search{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    #search{
+        width:30%;
+    }
+    #ref{
+    width:100%
+    }
+    #nomclient{
+    width:100%
+    }
+    #siteclient{
+    width:100%
+    }
+    #typemaint{
+    width: 100%;
+    }
+    #debut{
+    width:100%
+    }
+    #fin{
+    width: 100%;
+    }
+}
+@media only screen and (min-width:1000px) {
+    #search{
+        width:25%;
+    }
+    #ref{
+    width:90%
+    }
+    #nomclient{
+    width:100%
+    }
+    #siteclient{
+    width:100%
+    }
+    #typemaint{
+    width: 90%;
+    }
+    #debut{
+    width:100%
+    }
+    #fin{
+    width: 100%;
+    }
+}
+@media only screen and (min-width:1200px) {
+    #search{
+        width:25%;
+    }
+   #ref{
+    width:85%
+   }
+   #nomclient{
+    width:85%
+   }
+   #siteclient{
+    width:85%
+   }
+   #typemaint{
+    width: 90%;
+   }
+   #debut{
+    width:100%
+   }
+   #fin{
+    width: 100%;
+   }
+}
+form input{
+    border-bottom: 1px solid ;
+    width: 50%;  
+    height: 75%;  
+}
+#FORM{
+    width: 100%;
+    border-top: solid 5px black;
+    height:min-content;
+}
+/* Masquer le bouton radio par défaut */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0b0303;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+#signature-pad{
+    background-color: antiquewhite;
+} 
+    /* Styler le bouton radio sélectionné */
+input[type="radio"].oui:checked {
+    background-color: #22ed0c; /* Exemple de couleur de fond pour le bouton sélectionné */
+    border-color: #111314; /* Exemple de couleur de bordure pour le bouton sélectionné */
+}
+input[type="radio"].non:checked {
+    background-color: #ed1f0c; /* Exemple de couleur de fond pour le bouton sélectionné */
+    border-color: #111314; /* Exemple de couleur de bordure pour le bouton sélectionné */
+}
+input[type="radio"].non:hover {
+    background-color: #ed1f0c; 
+    border-color: #111314; 
+}
+    /* Styler le label associé */
+label {
+    margin-left: 5px; /* Ajustez la marge selon vos préférences */
+    cursor: pointer;
+}
+    
+    /* Facultatif : Ajouter un style au survol du bouton radio */
+input[type="radio"].oui:hover {
+    background-color: #22ed0c;
+    border-color: #111314; /* Exemple de couleur de bordure au survol */
+}
+

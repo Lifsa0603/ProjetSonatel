@@ -1,0 +1,66 @@
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid orange;
+    perspective: 1000px;
+    cursor: pointer; /* Ajout d'un curseur de type pointer pour indiquer que l'élément est cliquable */
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+  }
+  
+  
+  /* Utilisez le clic pour l'effet de rotation */
+  .flip-box.active .flip-box-inner {
+    transition: transform 1s; /* Transition en 1 seconde lors du clic */
+    transform: rotateX(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+
+  .slice {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    clip: rect(0, 110px, 110px, 0); /* Ajustez la partie visible de l'arc */
+    transform-origin:  100% 50%;
+  }
+ 
+  .pie-chart {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+ 
+  .center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+  }
+  
